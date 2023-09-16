@@ -74,6 +74,7 @@ customer         | customer_id
 
 
 
+
 select tab.table_schema as database_schema,  
     sta.index_name as pk_name,  
     sta.seq_in_index as column_id,  
