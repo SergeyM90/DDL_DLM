@@ -89,4 +89,5 @@ where tab.table_schema = 'sakila'
 order by tab.table_name,  
     column_id;  
 
-    ![image](https://github.com/SergeyM90/DDL_DLM/assets/84016375/ec6b8f39-4ec8-45a1-9ba8-9cb6dc03743e)
+![image](https://github.com/SergeyM90/DDL_DLM/assets/84016375/b99d5b34-2c42-4c2c-9bd6-6754634e04b1)
+
