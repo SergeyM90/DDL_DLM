@@ -74,19 +74,19 @@ customer         | customer_id
 
 
 
-select tab.table_schema as database_schema,
-    sta.index_name as pk_name,
-    sta.seq_in_index as column_id,
-    sta.column_name,
-    tab.table_name
-from information_schema.tables as tab
-inner join information_schema.statistics as sta
-        on sta.table_schema = tab.table_schema
-        and sta.table_name = tab.table_name
-        and sta.index_name = 'primary'
-where tab.table_schema = 'sakila'
-    and tab.table_type = 'BASE TABLE'
-order by tab.table_name,
-    column_id;
+select tab.table_schema as database_schema,  
+    sta.index_name as pk_name,  
+    sta.seq_in_index as column_id,  
+    sta.column_name,  
+    tab.table_name  
+from information_schema.tables as tab  
+inner join information_schema.statistics as sta  
+        on sta.table_schema = tab.table_schema  
+        and sta.table_name = tab.table_name  
+        and sta.index_name = 'primary'  
+where tab.table_schema = 'sakila'  
+    and tab.table_type = 'BASE TABLE'  
+order by tab.table_name,  
+    column_id;  
 
     ![image](https://github.com/SergeyM90/DDL_DLM/assets/84016375/ec6b8f39-4ec8-45a1-9ba8-9cb6dc03743e)
